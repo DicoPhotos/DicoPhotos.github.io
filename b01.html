@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>b01</title>
+	
+	<link rel="stylesheet" href="b01css.css">
+	
+</head>
+
+<body>
+	<h1 style="font-family: Segoe UI; font-size: 25px">B1-B2 : image 1</h1>
+
+	<div class="popup" id="vautour">
+		VAUTOUR
+		<a class="close" href="#">✖</a>
+	</div>
+
+	<img src="IMG_1379.JPG" alt="Image B01" usemap="#b01map">
+
+	<map name="b01map">
+		<area href="#vautour"
+			coords="2318,2831,2249,2773,2197,2821,2249,2651,2138,2657,2170,2604,2091,2603,2265,2449,2392,2238,2620,2074,3023,1941,3081,1899,3229,1872,3256,1820,3245,1772,3309,1661,3425,1645,3505,1740,3610,1894,3494,1825,3441,1968,3335,2079,3399,2153,3351,2328,3219,2492,3102,2540,2964,2747,3065,2948,3309,3102,3092,3049,3007,3027,2911,3080,2917,3001,2805,2762,2806,2604,2625,2620,2530,2609,2366,2763"
+			shape="poly">
+	</map>
+
+	<script>
+		!function(){"use strict";function r(){function e(){var r={width:u.width/u.naturalWidth,height:u.height/u.naturalHeight},a={width:parseInt(window.getComputedStyle(u,null).getPropertyValue("padding-left"),10),height:parseInt(window.getComputedStyle(u,null).getPropertyValue("padding-top"),10)};i.forEach(function(e,t){var n=0;o[t].coords=e.split(",").map(function(e){var t=1==(n=1-n)?"width":"height";return a[t]+Math.floor(Number(e)*r[t])}).join(",")})}function t(e){return e.coords.replace(/ *, */g,",").replace(/ +/g,",")}function n(){clearTimeout(d),d=setTimeout(e,250)}function r(e){return document.querySelector('img[usemap="'+e+'"]')}var a=this,o=null,i=null,u=null,d=null;"function"!=typeof a._resize?(o=a.getElementsByTagName("area"),i=Array.prototype.map.call(o,t),u=r("#"+a.name)||r(a.name),a._resize=e,u.addEventListener("load",e,!1),window.addEventListener("focus",e,!1),window.addEventListener("resize",n,!1),window.addEventListener("readystatechange",e,!1),document.addEventListener("fullscreenchange",e,!1),u.width===u.naturalWidth&&u.height===u.naturalHeight||e()):a._resize()}function e(){function t(e){e&&(!function(e){if(!e.tagName)throw new TypeError("Object is not a valid DOM element");if("MAP"!==e.tagName.toUpperCase())throw new TypeError("Expected <MAP> tag, found <"+e.tagName+">.")}(e),r.call(e),n.push(e))}var n;return function(e){switch(n=[],typeof e){case"undefined":case"string":Array.prototype.forEach.call(document.querySelectorAll(e||"map"),t);break;case"object":t(e);break;default:throw new TypeError("Unexpected data type ("+typeof e+").")}return n}}"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&"object"==typeof module.exports?module.exports=e():window.imageMapResize=e(),"jQuery"in window&&(window.jQuery.fn.imageMapResize=function(){return this.filter("map").each(r).end()})}();
+	</script>
+
+	<script>
+		imageMapResize();
+		// function OnImageClick(){
+		// 	alert 
+		// }
+	</script>
+
+</body>
+
+</html>
