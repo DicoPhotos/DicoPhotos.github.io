@@ -20,6 +20,11 @@ body {
 	padding: 0;
 }
 
+h1 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
 img {
 	padding: 0;
 	display: block;
@@ -46,9 +51,12 @@ area {
 	position: absolute;
 	opacity: 0;
 	transition: opacity 300ms;
+	z-index: 1000;
 }
 
-.popup > a {
+.popup > .close {
+	margin-left: 10px;
+	padding: 4px 6px;
 
 	background-color: black;
 	color: rgb(255, 255, 255);
