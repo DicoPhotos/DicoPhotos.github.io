@@ -12,64 +12,35 @@
 </head>
 
 <body>
-	<h1 style="font-family: Segoe UI; font-size: 25px">A1-A2 : image 1</h1>
+	<h1 style="font-family: Segoe UI; font-size: 30px">A1-A2 : image 1</h1>
 
-	<style>
-		.button {
-		  border: none;
-		  color: white;
-		  padding: 4px 70px;
-		  text-align: center;
-		  text-decoration: none;
-		  display: inline-block;
-		  font-size: 30px;
-		  margin: 4px 2px;
-		  transition-duration: 0.4s;
-		  cursor: pointer;
-		}
-		
-		.button1 {
-		  background-color: white;
-		  color: black;
-		  border: 2px solid #2b9948;
-		}
-		
-		.button1:hover {
-		  background-color: #2b9948;
-		  color: white;
-		}
-		
-		.button2 {
-		  background-color: white;
-		  color: black;
-		  border: 2px solid #e67339;
-		}
-		
-		.button2:hover {
-		  background-color: #e67339;
-		  color: white;
-		}
-	</style>
-
-	<button class="button button1" title="Niveau débutant avec mots simples." onclick="window.location.href='https://dicophotos.github.io/b01';">B1-B2</button>
-	<button class="button button2" title="Niveau avancé avec termes plus difficiles." onclick="window.location.href='https://dicophotos.github.io/';">HOME</button>
+	<button class="button button1" title="Niveau plus avancé." onclick="window.location.href='https://dicophotos.github.io/b01';">B1-B2</button>
+	<button class="button button2" title="Retour à la page d'acceuil." onclick="window.location.href='https://dicophotos.github.io/';">HOME</button>
 
 	<div class="popup" id="oiseau">
-		OISEAU
+		un OISEAU
 		<a class="close" href="#">X</a>
 	</div>
 	<div class="popup" id="plante">
-		PLANTE
+		une PLANTE
 		<a class="close" href="#">X</a>
 	</div>
 	<div class="popup" id="pierre">
-		PIERRE
+		une PIERRE
+		<a class="close" href="#">X</a>
+	</div>
+	<div class="popup" id="mortes">
+		(des feuilles) MORTES
+		<a class="close" href="#">X</a>
+	</div>
+	<div class="popup" id="herbe">
+		une HERBE
 		<a class="close" href="#">X</a>
 	</div>
 
-	<img src="IMG_1379.JPG" alt="Image B01" usemap="#b01map">
+	<img src="img01.JPG" alt="Image 01" usemap="#01map">
 
-	<map name="b01map">
+	<map name="01map">
 		<area 
 		href="#oiseau"
 		coords="2318,2831,2249,2773,2197,2821,2249,2651,2138,2657,2170,2604,2091,2603,2265,2449,2392,2238,2620,2074,3023,1941,3081,1899,3229,1872,3256,1820,3245,1772,3309,1661,3425,1645,3505,1740,3610,1894,3494,1825,3441,1968,3335,2079,3399,2153,3351,2328,3219,2492,3102,2540,2964,2747,3065,2948,3309,3102,3092,3049,3007,3027,2911,3080,2917,3001,2805,2762,2806,2604,2625,2620,2530,2609,2366,2763"
@@ -81,6 +52,14 @@
 		<area 
 		href="#pierre"
 		coords="0,3492,168,3455,189,3402,274,3412,401,3365,592,3381,814,3333,910,3275,1026,3290,1148,3275,1418,3243,1508,3200,1635,3190,1704,3169,1810,3200,1942,3169,2091,3163,2271,3052,2467,3105,2546,3137,2594,3089,2631,3100,2694,3100,2832,3084,2922,3084,2985,3004,3070,3057,3160,3063,3309,3121,3383,3121,3478,3211,3552,3190,3594,3243,3706,3238,3775,3285,3891,3306,4045,3434,4161,3465,4225,3529,4405,3539,4537,3592,4643,3672,4775,3794,4839,3894,4823,3932,4823,4000,0,4000"
+		shape="poly">
+		<area
+		href="#mortes"
+		coords="3833,2570,3759,2559,3653,2464,3367,2522,3404,2564,3616,2490,3690,2554,3574,2596,3595,2639,3325,2628,3113,2564,3251,2639,3494,2718,3547,2729,3388,2750,3494,2771,3473,2803,3309,2782,3420,2824,3341,2877,3304,2872,3293,2903,3383,2914,3372,2962,3346,3041,3367,3078,3431,3099,3457,3115,3510,3158,3563,3184,3621,3211,3780,3280,3865,3311,3918,3311,3966,3338,4019,3301,4124,3327,4151,3290,4103,3174,4051,3142,3961,3264,3971,3142,3998,3025,4045,2999,4003,2903,4088,2972,4029,2665,4045,2548,4082,2654,4172,3004,4247,2909,4326,2866,4448,3009,4506,3158,4432,3073,4257,2956,4225,3110,4326,3126,4437,3227,4506,3380,4533,3460,4490,3465,4474,3513,4559,3592,4670,3693,4697,3645,5020,3793,5020,3698,4903,3439,4977,3486,5004,3401,4887,3290,5078,3380,4983,3285,4919,3131,5046,3269,5110,3359,5115,3264,4961,3004,4961,2951,5247,3126,5480,3168,5322,3099,5036,2946,4977,2888,5025,2877,4993,2850,5327,3052,5390,3057,5343,3004,5099,2824,5099,2782,4707,2580,4628,2612,4585,2670,4559,2744,4464,2787,4395,2744,4246,2687,4161,2655,4113,2697,4087,2528,3986,2432,3997,2485,3955,2565,3865,2528"
+		shape="poly">
+		<area
+		href="#herbe"
+		coords="714,3349,549,3375,438,3349,327,3370,205,3391,163,3460,4,3460,36,3365,9,3317,78,3328,83,3269,142,3306,163,3243,205,3290,279,3259,285,3306,380,3285,364,3206,295,3206,295,3132,205,3153,253,3084,142,3100,142,3031,94,3100,62,3041"
 		shape="poly">
 	</map>
 	
