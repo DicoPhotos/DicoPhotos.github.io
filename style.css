@@ -48,10 +48,21 @@ h1 {
 .button2 {
 	background-color: white;
 	color: black;
-	border: 2px solid #e67339;
+	border: 2px solid #2b9948;
 }
 
 .button2:hover {
+	background-color: #2b9948;
+	color: white;
+}
+
+.button3 {
+	background-color: white;
+	color: black;
+	border: 2px solid #e67339;
+}
+
+.button3:hover {
 	background-color: #e67339;
 	color: white;
 }
